@@ -44,4 +44,35 @@ describe('Snapshot tests - does each component match the snapshot?', () => {
   });
 });
 
+describe('Submitting the MadLibForm renders a new MadLib in browser', () => {
+  test('form submission renders a new MadLib', () => {
+    const { getByText, queryByText, getByLabelText } = render(<MadLibArea />);
+    const nounInput = getByLabelText("Enter a Noun");
+    const nounTwoInput = getByLabelText("Enter Another Noun");
+    const adjInput = getByLabelText("Enter an Adjective");
+    const colorInput = getByLabelText("Enter a Color");
+    const submitBtn = queryByText("Submit");
+    expect(document.body).not.toContainHTML('class="MadLib"');
+
+    fireEvent.change(nounInput, {target: { value: 'bike'}});
+    fireEvent.change(nounTwoInput, { target: { value: 'frog' }});
+    fireEvent.change(adjInput, { target: { value: "silly" }});
+    fireEvent.change(colorInput, { target: { value: "blue" }});
+    fireEvent.click(submitBtn);
+
+    // MadLibArea should now contain an instance of the MadLib component, and
+    // NOT an instance of the MadLibForm
+    expect(document.body).toContainHTML('class="MadLib"');
+    expect(document.body).not.toContainHTML('class="MadLibForm"');
+
+    // Click the reset button
+    const resetBtn = queryByText("Reset");
+    fireEvent.click(resetBtn);
+
+    // Now, MadLibForm should be showing, and NOT a MadLib component
+    expect(document.body).toContainHTML('class="MadLibForm"');
+    expect(document.body).not.toContainHTML('class="MadLib"');
+  });
+});
+
 
