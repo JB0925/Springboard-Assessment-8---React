@@ -1,0 +1,222 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Snapshot tests - does each component match the snapshot? The App component matches the snapshot 1`] = `
+<DocumentFragment>
+  <div
+    class="App"
+  >
+    <h1>
+      Madlibs!
+    </h1>
+    <div
+      class="MadLibArea"
+    >
+      <form
+        class="MadLibForm"
+      >
+        <label
+          for="noun"
+        >
+          Enter a Noun
+        </label>
+        <input
+          id="noun"
+          name="noun"
+          placeholder="i.e. bike, football, etc."
+          required=""
+          type="text"
+          value=""
+        />
+        <label
+          for="nounTwo"
+        >
+          Enter Another Noun
+        </label>
+        <input
+          id="nounTwo"
+          name="nounTwo"
+          placeholder="i.e. bike, football, etc."
+          required=""
+          type="text"
+          value=""
+        />
+        <label
+          for="adjective"
+        >
+          Enter an Adjective
+        </label>
+        <input
+          id="adjective"
+          name="adjective"
+          placeholder="i.e. funny, happy, ugly, etc."
+          required=""
+          type="text"
+          value=""
+        />
+        <label
+          for="color"
+        >
+          Enter a Color
+        </label>
+        <input
+          id="color"
+          name="color"
+          placeholder="i.e. blue, yellow, etc."
+          required=""
+          type="text"
+          value=""
+        />
+        <button
+          type="submit"
+        >
+          Submit
+        </button>
+      </form>
+    </div>
+  </div>
+</DocumentFragment>
+`;
+
+exports[`Snapshot tests - does each component match the snapshot? The MadLib component matches the snapshot 1`] = `
+<DocumentFragment>
+  <p
+    class="MadLib"
+  />
+</DocumentFragment>
+`;
+
+exports[`Snapshot tests - does each component match the snapshot? The MadLibArea component matches the snapshot 1`] = `
+<DocumentFragment>
+  <div
+    class="MadLibArea"
+  >
+    <form
+      class="MadLibForm"
+    >
+      <label
+        for="noun"
+      >
+        Enter a Noun
+      </label>
+      <input
+        id="noun"
+        name="noun"
+        placeholder="i.e. bike, football, etc."
+        required=""
+        type="text"
+        value=""
+      />
+      <label
+        for="nounTwo"
+      >
+        Enter Another Noun
+      </label>
+      <input
+        id="nounTwo"
+        name="nounTwo"
+        placeholder="i.e. bike, football, etc."
+        required=""
+        type="text"
+        value=""
+      />
+      <label
+        for="adjective"
+      >
+        Enter an Adjective
+      </label>
+      <input
+        id="adjective"
+        name="adjective"
+        placeholder="i.e. funny, happy, ugly, etc."
+        required=""
+        type="text"
+        value=""
+      />
+      <label
+        for="color"
+      >
+        Enter a Color
+      </label>
+      <input
+        id="color"
+        name="color"
+        placeholder="i.e. blue, yellow, etc."
+        required=""
+        type="text"
+        value=""
+      />
+      <button
+        type="submit"
+      >
+        Submit
+      </button>
+    </form>
+  </div>
+</DocumentFragment>
+`;
+
+exports[`Snapshot tests - does each component match the snapshot? The MadLibForm component matches the snapshot 1`] = `
+<DocumentFragment>
+  <form
+    class="MadLibForm"
+  >
+    <label
+      for="noun"
+    >
+      Enter a Noun
+    </label>
+    <input
+      id="noun"
+      name="noun"
+      placeholder="i.e. bike, football, etc."
+      required=""
+      type="text"
+      value=""
+    />
+    <label
+      for="nounTwo"
+    >
+      Enter Another Noun
+    </label>
+    <input
+      id="nounTwo"
+      name="nounTwo"
+      placeholder="i.e. bike, football, etc."
+      required=""
+      type="text"
+      value=""
+    />
+    <label
+      for="adjective"
+    >
+      Enter an Adjective
+    </label>
+    <input
+      id="adjective"
+      name="adjective"
+      placeholder="i.e. funny, happy, ugly, etc."
+      required=""
+      type="text"
+      value=""
+    />
+    <label
+      for="color"
+    >
+      Enter a Color
+    </label>
+    <input
+      id="color"
+      name="color"
+      placeholder="i.e. blue, yellow, etc."
+      required=""
+      type="text"
+      value=""
+    />
+    <button
+      type="submit"
+    >
+      Submit
+    </button>
+  </form>
+</DocumentFragment>
+`;
